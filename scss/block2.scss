@@ -1,0 +1,124 @@
+.block2{
+    grid-area: block2;
+    display: grid;
+    grid-template-areas: "block2_left block2_right ."
+    "block2_botton block2_botton .";
+    margin-top: 40px;
+
+    color: aliceblue;
+    grid-template-columns: 1fr 1fr 40px;
+    grid-template-rows: 500px 50px;
+    
+}
+.block2_right{
+    grid-area: block2_right; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    align-self: center;
+    margin-right: 20px;
+}
+.block2_video{
+    width: 100%;
+}
+.block2_left{
+    grid-area: block2_left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280px;
+    align-self: center;
+    
+}
+.block2_botton{
+    grid-area: block2_botton;
+}
+.block2_left_info{
+    align-self: center;
+    display: grid;
+    grid-template-areas: "block2_left_title"
+    "block2_left_clock"
+    "block2_left_text";
+    grid-template-rows: 60px 100px 120px;
+}
+.block2_left_title{
+    grid-area: block2_left_title;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    p {
+        display: table;
+     
+      background: -moz-linear-gradient(45deg, rgba(212,60,22,0.85) 0%, rgba(214,74,39,0.85) 13%, rgba(231,166,151,1) 100%);
+      background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(212,60,22,0.85)), color-stop(13%, rgba(214,74,39,0.85)), color-stop(100%, rgba(231,166,151,1)));
+      background: -webkit-linear-gradient(45deg, rgba(212,60,22,0.85) 0%, rgba(214,74,39,0.85) 13%, rgba(231,166,151,1) 100%);
+      background: -o-linear-gradient(45deg, rgba(212,60,22,0.85) 0%, rgba(214,74,39,0.85) 13%, rgba(231,166,151,1) 100%);
+      background: -ms-linear-gradient(45deg, rgba(212,60,22,0.85) 0%, rgba(214,74,39,0.85) 13%, rgba(231,166,151,1) 100%);
+      background: linear-gradient(45deg, rgba(212,60,22,0.85) 0%, rgba(214,74,39,0.85) 13%, rgba(231,166,151,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d43c16', endColorstr='#e7a697', GradientType=1 );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      
+      }
+}
+.block2_left_clock{
+    grid-area: block2_left_clock;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.block2_left_text{
+    grid-area: block2_left_text;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    text-align: justify;
+    p {
+        display: table;
+     
+      background: -moz-linear-gradient(45deg, rgba(212,60,22,0.85) 0%, rgba(214,74,39,0.85) 13%, rgba(231,166,151,1) 100%);
+      background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(212,60,22,0.85)), color-stop(13%, rgba(214,74,39,0.85)), color-stop(100%, rgba(231,166,151,1)));
+      background: -webkit-linear-gradient(45deg, rgba(212,60,22,0.85) 0%, rgba(214,74,39,0.85) 13%, rgba(231,166,151,1) 100%);
+      background: -o-linear-gradient(45deg, rgba(212,60,22,0.85) 0%, rgba(214,74,39,0.85) 13%, rgba(231,166,151,1) 100%);
+      background: -ms-linear-gradient(45deg, rgba(212,60,22,0.85) 0%, rgba(214,74,39,0.85) 13%, rgba(231,166,151,1) 100%);
+      background: linear-gradient(45deg, rgba(212,60,22,0.85) 0%, rgba(214,74,39,0.85) 13%, rgba(231,166,151,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d43c16', endColorstr='#e7a697', GradientType=1 );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      
+      }
+}
+.block2_left_title_bottom{
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+.block2_left_bottom{
+    font-size: 36px;
+    text-align: justify;
+}
+.block2_left_title_top{
+    font-size: 49px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+.block2_link_ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.block2_link_li{
+    img{
+        width: 35px;
+        height:  35px;
+    }
+    margin-right: 10px;
+}
