@@ -65,11 +65,11 @@ $white: #fff;
 .body_pages{
     display: grid;
     grid-template-areas: "header "
-    "  block2 "   
-    "  block3 " 
-    " block4 "
+    " block2 "   
+    " block3 " 
     " block5 "
-
+    " block4 "
+    " footer "
     ;
     //grid-template-columns: 1080px minmax(10px, 1fr);
 }
@@ -77,19 +77,23 @@ $white: #fff;
 @import "header.scss";
 @import "block2.scss";
 @import "block3.scss";
-@import "block4.scss";
 @import "block5.scss";
+@import "block4.scss";
+@import "footer.scss";
+
 
 @media screen and (max-width:1100px){
     .body_pages{
         display: grid;
-        grid-template-areas: " . header ."
-        " . block2 . "   
-        " . block3 . " 
-        " . block4 . "
-        " . block5 . "
+        grid-template-areas: "  header "
+        " block2 "   
+        " block3 " 
+        " block5 "
+        " block4 "
+        " footer "
+
     
         ;
-        grid-template-columns: minmax(10px, 1fr) minmax(10px, 1080px) minmax(10px, 1fr);
+        grid-template-columns: /*minmax(10px, 1fr) */minmax(10px, 1080px) /*minmax(10px, 1fr)*/;
     }
 }

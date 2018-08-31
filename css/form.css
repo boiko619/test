@@ -18,7 +18,7 @@
   display: grid;
   grid-template-areas: "new_price";
   border-radius: 10px 10px 0 0;
-  background: #411208; }
+  background: #1b500a; }
 
 .new_price {
   grid-area: new_price;
@@ -66,7 +66,7 @@
 #sub {
   width: 230px;
   height: 60px;
-  background: #dc4017;
+  background: #29860c;
   border: none;
   font-size: 22px;
   color: #fff;
@@ -78,7 +78,7 @@
   height: 60px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  background: #b13412;
+  background: #1c7501;
   display: flex;
   flex-direction: row;
   align-items: center;
