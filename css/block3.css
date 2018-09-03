@@ -4,11 +4,13 @@
   grid-template-areas: "block3_left block3_right";
   grid-template-columns: 450px 1fr;
   grid-template-rows: 400px;
-  margin-top: 65px;
-  margin-bottom: 20px;
+  padding-top: 65px;
+  padding-bottom: 20px;
+  background-image: url("/images/bg/bg1.png");
+  background-position: center;
+  background-size: cover;
   overflow: hidden;
-  position: relative;
-  border-radius: 10px; }
+  position: relative; }
 
 .block3_left {
   grid-area: block3_left;
@@ -27,7 +29,8 @@
   align-self: center;
   text-transform: uppercase;
   text-align: justify;
-  width: 400px; }
+  width: 400px;
+  font-family: 'Roboto Condensed', sans-serif; }
 
 .block3_left_grid {
   display: grid;
@@ -95,7 +98,8 @@
   color: white; }
 
 .block3_right_text {
-  padding-top: 20px; }
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif; }
 
 @media screen and (max-width: 1030px) {
   .block3_left_text {

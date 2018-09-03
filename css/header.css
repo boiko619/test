@@ -54,7 +54,8 @@
   font-size: 22px;
   text-transform: uppercase;
   padding-left: 20px;
-  border-radius: 20px 20px 0 0; }
+  border-radius: 20px 20px 0 0;
+  font-family: 'Open Sans', sans-serif; }
 
 .input {
   height: 55px;
@@ -73,7 +74,8 @@
 
 .call_me_bottom {
   grid-area: call_me_bottom;
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif; }
 
 .form_tel, .form_mail {
   padding-top: 15px; }
@@ -131,7 +133,7 @@
   display: grid;
   justify-content: left;
   grid-template-areas: "logo title .";
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr minmax(3px, 1fr);
   grid-template-rows: 1fr;
   margin-bottom: 50px;
   margin-top: 30px; }
@@ -143,7 +145,12 @@
   flex-direction: row;
   justify-content: flex-start;
   font-size: 32px;
-  color: #fff; }
+  color: #fff;
+  align-items: flex-end; }
+  .logo img {
+    height: 55px;
+    width: 55px;
+    margin-right: 10px; }
 
 .title {
   grid-area: title;
@@ -152,7 +159,8 @@
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: white; }
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif; }
   .title i {
     color: #eeeeee;
     opacity: 0.7;
@@ -389,6 +397,7 @@
   font-size: 54px;
   text-transform: uppercase;
   display: table;
+  font-family: 'Roboto Condensed', sans-serif;
   background: #008009;
   background: -moz-linear-gradient(45deg, #008009 0%, #cfffba 100%);
   background: -webkit-gradient(left bottom, right top, color-stop(0%, #008009), color-stop(100%, #cfffba));
@@ -411,22 +420,24 @@
 .title_text_small {
   font-size: 32px;
   color: white;
+  font-family: 'Open Sans', sans-serif;
   display: table;
-  background: #008009;
-  background: -moz-linear-gradient(45deg, #008009 0%, #cfffba 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #008009), color-stop(100%, #cfffba));
-  background: -webkit-linear-gradient(45deg, #008009 0%, #cfffba 100%);
-  background: -o-linear-gradient(45deg, #008009 0%, #cfffba 100%);
-  background: -ms-linear-gradient(45deg, #008009 0%, #cfffba 100%);
-  background: linear-gradient(45deg, #008009 0%, #cfffba 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008009', endColorstr='#cfffba', GradientType=1 );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  /* background: rgba(0,128,9,1);
+        background: -moz-linear-gradient(45deg, rgba(0,128,9,1) 0%, rgba(207,255,186,1) 100%);
+        background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,128,9,1)), color-stop(100%, rgba(207,255,186,1)));
+        background: -webkit-linear-gradient(45deg, rgba(0,128,9,1) 0%, rgba(207,255,186,1) 100%);
+        background: -o-linear-gradient(45deg, rgba(0,128,9,1) 0%, rgba(207,255,186,1) 100%);
+        background: -ms-linear-gradient(45deg, rgba(0,128,9,1) 0%, rgba(207,255,186,1) 100%);
+        background: linear-gradient(45deg, rgba(0,128,9,1) 0%, rgba(207,255,186,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008009', endColorstr='#cfffba', GradientType=1 );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;*/ }
 
 .title_text_botton {
   font-size: 34px;
   color: white;
   text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
   display: table;
   background: #008009;
   background: -moz-linear-gradient(45deg, #008009 0%, #cfffba 100%);

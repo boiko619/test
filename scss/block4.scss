@@ -1,18 +1,19 @@
 $black: #000;
 .block4{
-    margin-top: 60px;
-
+    padding-top: 60px;
     grid-area: block4;
     display: grid;
     grid-template-areas: "block4_title block4_title"
     "block4_left block4_right";
-
     //grid-template-columns: 320px 740px;
     p{
         color: wheat;
     }
+   // grid-template-rows:50px 600px;
     position: relative;
-    background: $black;
+    background-image: url("/images/bg/bg2.png");
+    background-position: center center;
+    background-size: cover;
 }
 
 .block4_left{
@@ -22,7 +23,7 @@ $black: #000;
     justify-content: flex-start;
     //align-items: center;
     padding-left: 50px;
-    padding-top: 120px;
+    padding-top: 20px;
 
 }
 .block4_left_ul{
@@ -41,8 +42,8 @@ $black: #000;
 }
 .block4_left_text_center{
     grid-area: block4_left_text_center;
-    margin-bottom: 20px;
-
+    margin-bottom: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 102px;
     p{
         
@@ -67,7 +68,7 @@ $black: #000;
     grid-area: block4_left_text_bottom;
     font-size: 55px;
     text-transform: uppercase;
-
+    font-family: 'Roboto Condensed', sans-serif;
     margin-bottom: 10px;
     p{
         
@@ -91,7 +92,9 @@ $black: #000;
 .block4_left_text_small{
     grid-area: block4_left_text_small;
     font-size: 17px;
-    
+    padding-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+
     p{
         color: lighten($black, 90);
     }
@@ -114,12 +117,20 @@ $black: #000;
     justify-content: start;
 }
 .block4_right_foto{
-   // position: relative;
+    position: relative;
     grid-area: block4_right_foto;
     right: 0;
-    bottom: 0;
+    top: -160px;
     margin: 0;
+    bottom: 0;
     padding: 0;
+    z-index: 1000;
+
+    img{
+        width: 700px;
+        height: auto;
+        //background: rgb(218, 203, 203);
+    }
     
    
 
@@ -131,8 +142,8 @@ $black: #000;
 }
 .block4_right_ul{
     position: relative;
-    //right: -250px;
-    padding-top: 100px;
+    right: -200px;
+    padding-top: 150px;
 }
 .block4_right_li{
     display: flex;
@@ -142,6 +153,9 @@ $black: #000;
     margin-bottom: 30px;
     position: relative;
     text-align: start;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 1001;
+
     i{
         color: #eeeeee;
         margin-right: 10px;

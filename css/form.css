@@ -30,7 +30,8 @@
   font-size: 22px;
   text-transform: uppercase;
   padding-left: 20px;
-  border-radius: 20px 20px 0 0; }
+  border-radius: 20px 20px 0 0;
+  font-family: 'Open Sans', sans-serif; }
 
 .input {
   height: 55px;
@@ -49,7 +50,8 @@
 
 .call_me_bottom {
   grid-area: call_me_bottom;
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif; }
 
 .form_tel, .form_mail {
   padding-top: 15px; }

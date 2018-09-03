@@ -39,7 +39,7 @@ $border: rgba(238, 238, 238, 1);
     display: grid;
     justify-content: left;
     grid-template-areas: "logo title .";
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr minmax(3px, 1fr) ;
     grid-template-rows: 1fr;
     margin-bottom: 50px;
     margin-top: 30px;
@@ -53,6 +53,12 @@ $border: rgba(238, 238, 238, 1);
     justify-content: flex-start;
     font-size: 32px;
     color: $white;
+    align-items: flex-end;
+    img{
+        height: 55px;
+        width: 55px;
+        margin-right: 10px;
+    }
 }
 .title{
     grid-area: title;
@@ -62,6 +68,7 @@ $border: rgba(238, 238, 238, 1);
     align-items: center;
     font-size: 16px;
     color: white;
+    font-family: 'Roboto Condensed', sans-serif;
     i{
         color: #eeeeee;
         opacity: 0.7;
@@ -374,7 +381,8 @@ background: rgba(0, 0, 0, 0.493);
     text-transform: uppercase;
 
         display: table;
-     
+        font-family: 'Roboto Condensed', sans-serif;
+
         background: rgba(0,128,9,1);
         background: -moz-linear-gradient(45deg, rgba(0,128,9,1) 0%, rgba(207,255,186,1) 100%);
         background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,128,9,1)), color-stop(100%, rgba(207,255,186,1)));
@@ -401,10 +409,11 @@ background: rgba(0, 0, 0, 0.493);
 .title_text_small{
     font-size: 32px;
     color:white;
-    
+    font-family: 'Open Sans', sans-serif;
+
         display: table;
      
-        background: rgba(0,128,9,1);
+       /* background: rgba(0,128,9,1);
         background: -moz-linear-gradient(45deg, rgba(0,128,9,1) 0%, rgba(207,255,186,1) 100%);
         background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,128,9,1)), color-stop(100%, rgba(207,255,186,1)));
         background: -webkit-linear-gradient(45deg, rgba(0,128,9,1) 0%, rgba(207,255,186,1) 100%);
@@ -413,7 +422,7 @@ background: rgba(0, 0, 0, 0.493);
         background: linear-gradient(45deg, rgba(0,128,9,1) 0%, rgba(207,255,186,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008009', endColorstr='#cfffba', GradientType=1 );
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;*/
       
       
 
@@ -422,7 +431,8 @@ background: rgba(0, 0, 0, 0.493);
     font-size: 34px;
     color:white;
     text-transform: uppercase;
-    
+    font-family: 'Roboto Condensed', sans-serif;
+
         display: table;
      
         background: rgba(0,128,9,1);

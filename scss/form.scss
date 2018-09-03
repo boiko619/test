@@ -40,6 +40,8 @@ $white: #fff;
     text-transform: uppercase;
     padding-left: 20px;
     border-radius: 20px 20px 0 0;
+    font-family: 'Open Sans', sans-serif;
+
 
 }
 
@@ -64,6 +66,7 @@ $white: #fff;
 .call_me_bottom{
     grid-area: call_me_bottom;
     font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
 
 }
 .form_tel, .form_mail{
@@ -77,6 +80,7 @@ $white: #fff;
     display: flex;
     flex-direction: row;
     border-radius: 4px;
+
 
 }
 #sub{

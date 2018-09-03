@@ -1,10 +1,12 @@
 .block4 {
-  margin-top: 60px;
+  padding-top: 60px;
   grid-area: block4;
   display: grid;
   grid-template-areas: "block4_title block4_title" "block4_left block4_right";
   position: relative;
-  background: #000; }
+  background-image: url("/images/bg/bg2.png");
+  background-position: center center;
+  background-size: cover; }
   .block4 p {
     color: wheat; }
 
@@ -14,7 +16,7 @@
   flex-direction: row;
   justify-content: flex-start;
   padding-left: 50px;
-  padding-top: 120px; }
+  padding-top: 20px; }
 
 .block4_left_ul {
   display: grid;
@@ -28,7 +30,8 @@
 
 .block4_left_text_center {
   grid-area: block4_left_text_center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 102px; }
   .block4_left_text_center p {
     display: table;
@@ -47,6 +50,7 @@
   grid-area: block4_left_text_bottom;
   font-size: 55px;
   text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
   margin-bottom: 10px; }
   .block4_left_text_bottom p {
     display: table;
@@ -63,7 +67,9 @@
 
 .block4_left_text_small {
   grid-area: block4_left_text_small;
-  font-size: 17px; }
+  font-size: 17px;
+  padding-left: 10px;
+  font-family: 'Open Sans', sans-serif; }
   .block4_left_text_small p {
     color: #e6e6e6; }
 
@@ -81,11 +87,17 @@
   justify-content: start; }
 
 .block4_right_foto {
+  position: relative;
   grid-area: block4_right_foto;
   right: 0;
-  bottom: 0;
+  top: -160px;
   margin: 0;
-  padding: 0; }
+  bottom: 0;
+  padding: 0;
+  z-index: 1000; }
+  .block4_right_foto img {
+    width: 700px;
+    height: auto; }
   .block4_right_foto img {
     float: right;
     margin: 0;
@@ -93,7 +105,8 @@
 
 .block4_right_ul {
   position: relative;
-  padding-top: 100px; }
+  right: -200px;
+  padding-top: 150px; }
 
 .block4_right_li {
   display: flex;
@@ -102,7 +115,9 @@
   align-items: center;
   margin-bottom: 30px;
   position: relative;
-  text-align: start; }
+  text-align: start;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 1001; }
   .block4_right_li i {
     color: #eeeeee;
     margin-right: 10px; }

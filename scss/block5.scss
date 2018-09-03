@@ -1,6 +1,6 @@
 $black: #000;
 .block5{
-    margin-top: 60px;
+    padding-top: 60px;
 
     grid-area: block5;
     display: grid;
@@ -8,9 +8,11 @@ $black: #000;
     " block5_right";
 
     grid-template-columns: 1fr;
-
+    background-image: url("/images/bg/bg1.png");
+    background-position: center;
+    background-size: cover;
     position: relative;
-    background: $black;
+    //background: $black;
 }
 
 .block5_left{
@@ -37,10 +39,15 @@ $black: #000;
     font-size: 23px;
     margin-bottom: 10px;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+
 }
 .block5_left_text_center{
     grid-area: block5_left_text_center;
     font-size: 102px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 4px;
+
     p{
         
         display: table;
@@ -64,6 +71,8 @@ $black: #000;
     grid-area: block5_left_text_bottom;
     font-size: 55px;
     margin-bottom: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+
     p{
         
         display: table;
@@ -87,6 +96,8 @@ $black: #000;
     grid-area: block5_left_text_small;
     font-size: 17px;
     text-align: end;  
+    font-family: 'Open Sans', sans-serif;
+
     p{
         color: lighten($black, 90);
     }
@@ -124,13 +135,17 @@ $black: #000;
     flex-direction: row;
     justify-content: start;  
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    font-family: 'Open Sans', sans-serif;
+
+    
     p{
-        color: rgb(85, 85, 85);
+        color: rgb(255, 255, 255);
         width: 280px;
+        font-size: 23px;
     }
 
-    background: rgba(190,235,179,1);
+    /*background: rgba(190,235,179,1);
     background: -moz-linear-gradient(45deg, rgba(190,235,179,1) 0%, rgba(41,227,47,1) 50%, rgba(194,237,187,1) 100%);
     background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(190,235,179,1)), color-stop(50%, rgba(41,227,47,1)), color-stop(100%, rgba(194,237,187,1)));
     background: -webkit-linear-gradient(45deg, rgba(190,235,179,1) 0%, rgba(41,227,47,1) 50%, rgba(194,237,187,1) 100%);
@@ -138,9 +153,9 @@ $black: #000;
     background: -ms-linear-gradient(45deg, rgba(190,235,179,1) 0%, rgba(41,227,47,1) 50%, rgba(194,237,187,1) 100%);
     background: linear-gradient(45deg, rgba(190,235,179,1) 0%, rgba(41,227,47,1) 50%, rgba(194,237,187,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#beebb3', endColorstr='#c2edbb', GradientType=1 );
-    height: 45px;
+    */height: 45px;
 
-    width: 330px;
+    width: 340px;
     border-radius: 5px;
 }
 .block5_right_ul{
@@ -156,13 +171,16 @@ $black: #000;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    font-family: 'Open Sans', sans-serif;
+
     p{
-        color: rgb(85, 85, 85);
+        color: rgb(255, 255, 255);
         width: 280px;
+        font-size: 23px;
     }
 
-    background: rgba(190,235,179,1);
+    /*background: rgba(190,235,179,1);
     background: -moz-linear-gradient(45deg, rgba(190,235,179,1) 0%, rgba(41,227,47,1) 50%, rgba(194,237,187,1) 100%);
     background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(190,235,179,1)), color-stop(50%, rgba(41,227,47,1)), color-stop(100%, rgba(194,237,187,1)));
     background: -webkit-linear-gradient(45deg, rgba(190,235,179,1) 0%, rgba(41,227,47,1) 50%, rgba(194,237,187,1) 100%);
@@ -170,8 +188,8 @@ $black: #000;
     background: -ms-linear-gradient(45deg, rgba(190,235,179,1) 0%, rgba(41,227,47,1) 50%, rgba(194,237,187,1) 100%);
     background: linear-gradient(45deg, rgba(190,235,179,1) 0%, rgba(41,227,47,1) 50%, rgba(194,237,187,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#beebb3', endColorstr='#c2edbb', GradientType=1 );
-    height: 45px;
-      width: 330px;
+    */height: 45px;
+      width: 340px;
     border-radius: 5px;
 }
 /*.block5_right_li::before{
@@ -197,7 +215,7 @@ $black: #000;
     width: 30px;
     background: #1c7501;
     font-size: 24px;
-    border-radius: 5px 0  0 5px;
+    border-radius: 5px 5px 5px 5px;
     p{
         color: white;
     }

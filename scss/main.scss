@@ -58,19 +58,19 @@ li{
 
 
 
-
 $white: #fff;
 
 
 .body_pages{
     display: grid;
-    grid-template-areas: "header "
-    " block2 "   
-    " block3 " 
-    " block5 "
-    " block4 "
-    " footer "
-    ;
+    grid-template-areas: "header header header "
+    " block2 block2 block2"   
+    " block3 block3 block3 " 
+    "block5 block5 block5 "
+    "block4 block4 block4 "
+    " footer footer footer ";
+    grid-template-columns: minmax(10px, 1fr) 1080px minmax(10px, 1fr);
+    /*grid-template-rows: 1fr  1fr  1fr  1fr 1fr ;*/
     //grid-template-columns: 1080px minmax(10px, 1fr);
 }
 
@@ -85,15 +85,15 @@ $white: #fff;
 @media screen and (max-width:1100px){
     .body_pages{
         display: grid;
-        grid-template-areas: "  header "
+        grid-template-areas: "  header  header  header "
         " block2 "   
         " block3 " 
-        " block5 "
+        " . block5 . "
         " block4 "
         " footer "
 
     
         ;
-        grid-template-columns: /*minmax(10px, 1fr) */minmax(10px, 1080px) /*minmax(10px, 1fr)*/;
+        grid-template-columns: minmax(10px, 1fr) minmax(10px, 1080px) minmax(10px, 1fr);
     }
 }
