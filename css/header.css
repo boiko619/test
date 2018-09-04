@@ -3,8 +3,8 @@
   display: grid;
   grid-template-areas: "nav nav" "left right";
   grid-template-columns: 600px minmax(350px, 1fr);
-  background-image: url("/images/bg_header.png");
-  background-position: center center;
+  background-image: url("/images/header.png");
+  background-position: center right;
   background-size: cover; }
 
 .left {
@@ -13,14 +13,15 @@
   grid-template-areas: "header_text" "product";
   justify-content: flex-start;
   margin-right: 60px;
-  padding-top: 170px; }
+  padding-top: 70px; }
 
 .right {
   grid-area: right;
   display: grid;
   grid-template-areas: "header_number" "call_me";
   justify-content: flex-start;
-  padding-top: 70px; }
+  padding-top: 5px;
+  margin-left: 70px; }
 
 .call_me {
   grid-area: call_me;
@@ -339,6 +340,10 @@
 @media screen and (max-width: 1000px) {
   .body_pages {
     background: #000000; }
+  .title i {
+    color: #eeeeee;
+    opacity: 0.7;
+    margin-right: 5px; }
   .header {
     justify-content: center;
     grid-area: header;
@@ -346,18 +351,9 @@
     grid-gap: 30px;
     grid-template-areas: "nav " "title" "left" "center" "right";
     grid-template-columns: 1fr;
-    background-image: url("/images/bgheadermedia.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black; }
-  .nav {
-    grid-area: nav;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 40px; }
-    .nav .head_menu {
-      display: none; }
   .title {
     display: flex;
     justify-content: center;
@@ -367,7 +363,7 @@
     grid-area: left;
     display: grid;
     grid-template-areas: "header_text_title" "product";
-    justify-content: center; }
+    justify-content: flex-start; }
   .center {
     grid-area: center;
     display: grid;
@@ -378,13 +374,14 @@
     grid-area: right;
     display: grid;
     grid-template-areas: "header_number" "call_me";
-    justify-content: center; }
+    justify-content: flex-start; }
   .sale {
     justify-content: center; }
   .sale_text {
     background: rgba(0, 0, 0, 0.493); }
   .header_text {
-    justify-content: center; }
+    justify-content: center;
+    padding-right: 4px; }
   .product {
     justify-content: flex-end; }
   .header_number {
@@ -472,3 +469,64 @@
 
 .header_info_li_nyse {
   margin: 0 10px; }
+
+@media screen and (max-width: 1030px) {
+  .header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: "nav nav" "left left"  "right right";
+    background-image: url("/images/header_media.jpg");
+    background-position: center center;
+    background-size: cover; } }
+
+@media screen and (max-width: 750px) {
+  .header {
+    background-image: url("/images/header_media_mini.png");
+    background-position: center right;
+    background-size: cover; } }
+
+@media screen and (max-width: 750px) {
+  .header {
+    grid-gap: 0px; }
+  .nav {
+    background: rgba(0, 0, 0, 0.712);
+    margin: 0;
+    grid-template-areas: "logo ." " title .";
+    grid-template-columns: 1fr minmax(3px, 100px);
+    grid-template-rows: 60px 60px; }
+  .left {
+    background: rgba(0, 0, 0, 0.712);
+    margin: 0;
+    padding-top: 130px; }
+  .right {
+    background: rgba(0, 0, 0, 0.712);
+    margin: 0;
+    justify-content: center; }
+  .title {
+    padding-left: 70px;
+    padding-top: 90px; } }
+
+@media screen and (max-width: 500px) {
+  .header_text {
+    margin-left: 3px; } }
+
+@media screen and (max-width: 420px) {
+  .shag {
+    font-size: 46px;
+    text-transform: uppercase; }
+  .title_text_botton {
+    font-size: 28px; }
+  .header_info_li_six img {
+    width: 110px;
+    height: 43px; }
+  .header_info_li_nyse {
+    margin: 0 5px; }
+  .nav {
+    background: rgba(0, 0, 0, 0.411);
+    margin: 0;
+    grid-template-areas: "logo ." " title .";
+    grid-template-columns: 1fr 10px;
+    grid-template-rows: 60px 60px; }
+  .title {
+    padding-left: 30px;
+    padding-top: 90px; } }

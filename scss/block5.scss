@@ -97,6 +97,7 @@ $black: #000;
     font-size: 17px;
     text-align: end;  
     font-family: 'Open Sans', sans-serif;
+    padding-right: 20px;
 
     p{
         color: lighten($black, 90);
@@ -236,52 +237,54 @@ $black: #000;
     
 
 }
-@media screen and (max-width:1030px){
-    .block5{
-    grid-template-areas: "block5_title"
-    "block5_right";
-    grid-template-rows: 100px 1fr;
-
-    grid-template-columns: minmax(740px, 1fr);
-}
-.block5_right{
-    display: flex;
-    justify-content: center;
-}
-.block5_left{
-    display: none;
-}
-
-
+@media screen and (max-width:800px){
+    .block5_right_info{
+        grid-area: block5_right_info;
+        position: relative;
+        display: grid;
+        grid-template-areas: ". block5_right_ul ."
+        " . block5_right_left_ul .";
+        grid-template-columns:50px 1fr  50px;
+        position: relative;
+        p{
+            padding-left: 6px;
+    }
+    }
+    .block5_right_left_ul{
+        position: relative;
+        //right: -250px;
+        padding-top: 0px;
+        grid-area: block5_right_left_ul; 
+    
+    }
 }
 @media screen and (max-width:750px){
-    .block5_grid{
-       
-        display: grid;
-        grid-template-columns:  220px 220px;
-        grid-auto-rows:  repeat(auto-fill, 250px);
-        grid-auto-flow: dense;
-        padding-left: 20px;
-        justify-content: center;
-
- }
- .block5_title{
-    text-align: center;
-    }
- .block5{
-    grid-template-areas: "block5_title"
-    "block5_right";
-    grid-template-rows: 120px 1fr ;
-    background: black;
-    grid-template-columns: minmax(340px, 1fr);}
-.block5_title{
-    text-align: center;
-    font-size: 38px;
-}}
+   }
 @media screen and (max-width:550px){
     .block5_grid{
         padding-top: 15px;
         display: grid;
         grid-template-columns: 220px;}
 
+}
+@media screen and (max-width:500px){
+    .block5_left{
+        grid-area: block5_left;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;}
+}
+@media screen and (max-width:420px){
+    .block5_right_info{
+        grid-area: block5_right_info;
+        position: relative;
+        display: grid;
+        grid-template-areas: ". block5_right_ul"
+        " . block5_right_left_ul";
+        grid-template-columns:5px 1fr;
+        position: relative;
+        p{
+            padding-left: 6px;
+    }
+    }
 }

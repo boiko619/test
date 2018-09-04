@@ -2,7 +2,7 @@
   padding-top: 60px;
   grid-area: block4;
   display: grid;
-  grid-template-areas: "block4_title block4_title" "block4_left block4_right";
+  grid-template-areas: "block4_left block4_right";
   position: relative;
   background-image: url("/images/bg/bg2.png");
   background-position: center center;
@@ -76,10 +76,9 @@
 .block4_right {
   grid-area: block4_right;
   display: grid;
-  grid-template-areas: "block4_right_info block4_right_foto";
-  position: relative; }
+  grid-template-areas: "block4_right_info block4_right_foto"; }
 
-.block4_right_info {
+.block4_right_left_info {
   grid-area: block4_right_info;
   position: relative;
   display: flex;
@@ -89,14 +88,10 @@
 .block4_right_foto {
   position: relative;
   grid-area: block4_right_foto;
-  right: 0;
-  top: -160px;
-  margin: 0;
-  bottom: 0;
   padding: 0;
   z-index: 1000; }
   .block4_right_foto img {
-    width: 700px;
+    width: 600px;
     height: auto; }
   .block4_right_foto img {
     float: right;
@@ -105,8 +100,7 @@
 
 .block4_right_ul {
   position: relative;
-  right: -200px;
-  padding-top: 150px; }
+  padding-top: 80px; }
 
 .block4_right_li {
   display: flex;
@@ -135,38 +129,99 @@
   .block4_item_text p {
     text-align: center; }
 
+/*.block4_right_left_info{
+    display: none;
+    
+}*/
 @media screen and (max-width: 1030px) {
   .block4 {
-    grid-template-areas: "block4_title" "block4_right";
-    grid-template-rows: 100px 1fr;
-    grid-template-columns: minmax(740px, 1fr); }
-  .block4_right {
-    display: flex;
-    justify-content: center; }
+    padding-top: 60px;
+    grid-area: block4;
+    display: grid;
+    grid-template-areas: "block4_left block4_right";
+    grid-template-rows: 650px;
+    position: relative;
+    background-image: url("/images/bg/bg2.png");
+    background-position: center center;
+    background-size: cover; }
+    .block4 p {
+      color: wheat; }
+  .block4_right_info {
+    display: none; }
+  .block4_right_ul {
+    position: relative;
+    right: 0;
+    padding-top: 80px; }
   .block4_left {
-    display: none; } }
+    grid-area: block4_left;
+    display: grid;
+    justify-content: start;
+    padding-left: 50px;
+    padding-top: 20px;
+    grid-template-areas: "block4_left_info" "block4_right_left_info"; }
+  .block4_right_foto {
+    grid-area: block4_right_foto;
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    z-index: 1000;
+    left: 0px;
+    /* display: flex;
+        flex-direction: row;
+        justify-content: center;*/ }
+  .block4_right_left_info {
+    grid-area: block4_right_left_info;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: start; } }
+
+@media screen and (max-width: 930px) {
+  .block4_right_foto {
+    position: relative;
+    grid-area: block4_right_foto;
+    padding: 0;
+    z-index: 1000; }
+    .block4_right_foto img {
+      width: 500px;
+      height: auto; } }
+
+@media screen and (max-width: 800px) {
+  .block4_right_foto {
+    position: relative;
+    grid-area: block4_right_foto;
+    padding: 0;
+    z-index: 1000;
+    right: 0px;
+    left: -50px; }
+    .block4_right_foto img {
+      width: 450px;
+      height: auto; } }
 
 @media screen and (max-width: 750px) {
-  .block4_grid {
-    display: grid;
-    grid-template-columns: 220px 220px;
-    grid-auto-rows: repeat(auto-fill, 250px);
-    grid-auto-flow: dense;
-    padding-left: 20px;
-    justify-content: center; }
-  .block4_title {
-    text-align: center; }
-  .block4 {
-    grid-template-areas: "block4_title" "block4_right";
-    grid-template-rows: 120px 1fr;
-    background: black;
-    grid-template-columns: minmax(340px, 1fr); }
-  .block4_title {
-    text-align: center;
-    font-size: 38px; } }
+  .block4_right_foto {
+    overflow: hidden;
+    left: 0px; } }
 
-@media screen and (max-width: 550px) {
-  .block4_grid {
-    padding-top: 15px;
+@media screen and (max-width: 650px) {
+  .block4 {
+    padding-top: 60px;
+    grid-area: block4;
     display: grid;
-    grid-template-columns: 220px; } }
+    grid-template-areas: "block4_right" "block4_left";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 520px;
+    position: relative;
+    background-image: url("/images/bg/bg2.png");
+    background-position: center center;
+    background-size: cover; }
+    .block4 p {
+      color: wheat; }
+  .block4_right_foto {
+    position: relative;
+    grid-area: block4_right_foto;
+    z-index: 1000;
+    border-radius: 20px; }
+    .block4_right_foto img {
+      width: 300px;
+      height: auto; } }
